@@ -23,4 +23,6 @@ async function seed() {
   ])
 }
 
-seed().finally(() => client.end())
+seed().finally(() => {
+  client.end()
+})

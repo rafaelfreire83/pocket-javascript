@@ -1,7 +1,7 @@
 import z from 'zod'
 
-const envSchgema = z.object({
+const envSchema = z.object({
   DATABASE_URL: z.string().url(),
 })
 
-export const env = envSchgema.parse(process.env)
+export const env = envSchema.parse(process.env)
